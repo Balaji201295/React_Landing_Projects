@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-archivo: "Archivo", sans-serif;
+  --color-light: #fff1ed;
+  --color-orange: #eb6e46;
+  --color-white: #ffffff;
+  --color-black: #101010;
+  --color-grey: #757b8a;
+  --transition: all 0.3s linear;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--font-inter);
+  font-size: 1rem;
+  line-height: 1.5;
+  background: var(--color-white);
+  color: var(--color-black);
+}
+a {
+  color: unset;
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+button {
+  border: none;
+  outline: none;
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+    transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}

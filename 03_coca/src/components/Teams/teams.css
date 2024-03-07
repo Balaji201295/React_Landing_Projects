@@ -1,0 +1,44 @@
+.app__team {
+  width: 100%;
+}
+.app__team_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.app__team_heading h1 {
+  flex: 1;
+}
+.app__team_heading p {
+  flex: 0.7;
+}
+.app__team_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.app__team_member {
+  flex: 1;
+  min-width: 260px;
+  max-width: 260px;
+}
+.app__team_member img {
+  width: 100%;
+}
+.app__team_member h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 2rem;
+  padding: 1rem 0 0.25rem 0;
+}
+
+@media screen and (max-width: 992px) {
+  .app__team_heading {
+    flex-direction: column;
+  }
+}

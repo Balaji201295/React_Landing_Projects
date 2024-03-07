@@ -1,0 +1,49 @@
+.app__cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  border-radius: 1rem;
+  padding: 4rem;
+  position: relative;
+}
+.app__cta_content {
+  width: 100%;
+  max-width: 645px;
+}
+.app__cta_content h1 {
+  padding-bottom: 1rem;
+}
+.app__cta_content .p__inter {
+  color: #ededed;
+  max-width: 525px;
+  padding-bottom: 2.5rem;
+}
+.app__cta .custom__button {
+  background: var(--color-white);
+  color: var(--color-orange);
+}
+.app__cta_img {
+  position: absolute;
+  right: -4rem;
+  bottom: -6.5rem;
+}
+.app__cta_img img {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .app__cta_img {
+    display: none;
+  }
+  .app__cta_content {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .app__cta {
+    padding: 2rem;
+  }
+}
